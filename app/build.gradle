@@ -9,7 +9,7 @@
 plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
     id 'war'
-    id 'org.gretty' version '3.0.3'
+    id 'org.gretty' version '3.0.1'
     id 'jacoco'
     id 'org.sonarqube' version '3.0'
 
@@ -35,7 +35,7 @@ gretty.httpPort=9090
 test.finalizedBy jacocoTestReport
 jacocoTestReport.dependsOn test
 
-/*
+
 jacocoTestReport {
     reports {
         xml.enabled true
@@ -50,4 +50,3 @@ sonarqube {
 }
 
 tasks['sonarqube'].dependsOn test
-*/
